@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'pages/about'
-  resources :ideas
-  
   root "ideas#index"
+
+  resources :ideas  
+  get 'pages/about'
 end
